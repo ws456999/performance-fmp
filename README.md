@@ -8,7 +8,7 @@
 - FCP
 - FMP
 - TTI时间
-- domNode FMP 渲染时间
+- domNode meaningful paint timing
 
 ## install
 
