@@ -20,27 +20,27 @@
 ```
 import Performance from 'performance-fmp';
 
-  // 获取performance数据
-  Performance.getTiming().then((data) => {
-    /* data include performance fmp fcp tti etc. */
-    console.log(data);
-  });
+// 获取performance数据
+Performance.getTiming().then((data) => {
+  /* data include performance fmp fcp tti etc. */
+  console.log(data);
+});
 
-  // 添加配置
-  Performance.getTiming({
-    duration: 5000; // fmp tti 超时时间设置
-  }).then((data) => {
-    /* data include performance fmp fcp tti etc. */
-    console.log(data);
-  });
+// 添加配置
+Performance.getTiming({
+  duration: 5000; // fmp tti 超时时间设置
+}).then((data) => {
+  /* data include performance fmp fcp tti etc. */
+  console.log(data);
+});
 
-  // 获取 node meaningful paint timing
-  Performance.getNodeMP({
-    duration: 3000,
-    node: document.querySelector('.app'),
-  }).then(({fmp}) => {
-    console.log(fmp)
-  });
+// 获取 node meaningful paint timing
+Performance.getNodeMP({
+  duration: 3000,
+  node: document.querySelector('.app'),
+}).then(({fmp}) => {
+  console.log(fmp)
+});
 
 ```
 
