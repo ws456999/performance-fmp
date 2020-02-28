@@ -1,10 +1,6 @@
 import 'mutationobserver-shim';
 import { getPerformanceTiming, PerformanceData } from "./getPerformanceTiming";
 
-/**
- * 参考 https://github.com/xingqiao/fmp-tti
- */
-
 /** 渲染统计点 */
 interface SpdPoint {
   /** 距离 起始时间 | navigationStart 时间 */
